@@ -17,15 +17,15 @@ import sdk.kxx.com.appsdk.app.AppConfig;
  * @Created Date : 2019/2/27 11:49
  * @Description : BaseSDKDemo
  */
-public class RetrofitHelp {
-    private RetrofitHelp mRetrofitHelp;
+public  class RetrofitHelp {
+    private static RetrofitHelp mRetrofitHelp;
 
     private Retrofit mRetrofit;
-    private String BASE_URL = AppConfig.BASE_URL;
+    private static String BASE_URL = AppConfig.BASE_URL;
 
-    public RetrofitHelp getRetrofitHelp() {
+    public static RetrofitHelp getRetrofitHelp() {
         if (mRetrofitHelp == null) {
-            synchronized (RetrofitHelp.this) {
+            synchronized (RetrofitHelp.class) {
                 if (mRetrofitHelp == null) {
                     mRetrofitHelp = new RetrofitHelp();
                 }
