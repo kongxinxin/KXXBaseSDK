@@ -9,7 +9,7 @@ import java.util.regex.PatternSyntaxException;
 /**
  * @author : kongxx
  * @Created Date : 2019/2/28 14:45
- * @Description : KXXBaseSDK
+ * @Description : 字符处理工具类
  */
 public class StringUtils {
     /**

@@ -6,4 +6,31 @@ package sdk.kxx.com.appsdk.model;
  * @Description : BaseSDKDemo
  */
 public class ErrorItem {
+    private String errorCode;
+    private String errorMessage;
+
+    public ErrorItem(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public ErrorItem(String code, String errors) {
+        this.errorCode = code;
+        this.errorMessage = errors;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
 }
